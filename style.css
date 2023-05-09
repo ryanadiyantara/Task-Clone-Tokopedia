@@ -1,0 +1,513 @@
+:root {
+  --primary: #03ac0e;
+  --bg1: #ffffff;
+  --bg2: #f9f6f2;
+  --bg3: #e2e2e2;
+  --bg4: #e1dbd6;
+  --bg5: #d1d1d1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--bg1);
+  color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  height: 64px;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 1.5% 0rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.navbar .navbar-1 {
+  height: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .navbar-1 .navbar-logo {
+  height: 32px;
+}
+
+.navbar .navbar-1 .navbar-category {
+  color: #00000080;
+  font-size: 0.8rem;
+  font-weight: normal;
+  padding: 0 1.5rem;
+}
+
+.navbar .navbar-1 .navbar-search {
+  display: flex;
+  align-items: center;
+  height: 32px;
+  flex: 1 0 0%;
+  width: auto;
+  border: 1px solid #00000080;
+  color: #00000080;
+  border-radius: 8px;
+  font-weight: bolder;
+  padding: 0 0.5rem;
+}
+
+.navbar .navbar-1 .navbar-cart {
+  display: flex;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+  padding: 0 2rem;
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+
+.navbar .navbar-1 .navbar-cart a {
+  color: #000000;
+}
+
+.navbar .navbar-1 .navbar-button {
+  display: flex;
+  flex-direction: row;
+  height: 32px;
+  padding: 0 0.5rem;
+  border-left: 0.1rem solid var(--bg5);
+}
+
+.navbar .navbar-1 .navbar-button .button-1 {
+  width: 80px;
+  background-color: var(--bg1);
+  border: none;
+  color: var(--primary);
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bolder;
+  border: 1px solid var(--primary);
+}
+.navbar .navbar-1 .navbar-button .button-2 {
+  width: 80px;
+  background-color: var(--primary);
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bolder;
+  border: 1px solid var(--bg1);
+  margin-left: 0.5rem;
+}
+
+.navbar .navbar-2 {
+  height: 32px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbar .navbar-2 a {
+  color: #00000080;
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+
+.navbar .navbar-2 .navbar-item {
+  margin-right: 1rem;
+}
+
+.navbar .navbar-2 .navbar-address {
+  margin-left: 40%;
+  display: flex;
+  align-items: center;
+}
+
+.navbar .navbar-2 .navbar-address .map-pin {
+  height: 16px;
+  width: auto;
+}
+
+.navbar .navbar-2 .navbar-address .chevron-down {
+  height: 16px;
+  width: auto;
+  color: #000000;
+}
+.navbar .navbar-2 .navbar-address span {
+  color: #000000;
+  font-weight: bolder;
+}
+
+/* Section */
+.card-section {
+  display: flex;
+  padding: 2rem 5% 1rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  color: #000000;
+  border-radius: 10px;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+}
+
+.card .card-image {
+  width: fit-content;
+  height: 15rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card .card-body {
+  padding: 0.5rem;
+}
+
+.card .card-tag {
+  width: fit-content;
+  margin-top: 0.5rem;
+  padding: 0.2rem 0.5rem;
+  color: var(--bg1);
+  font-weight: bold;
+  font-size: 0.8rem;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: goldenrod;
+}
+
+.card .card-title {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.card .card-price {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  margin-bottom: 0.5rem;
+}
+
+.card .card-promo {
+  width: fit-content;
+  font-size: 0.8rem;
+  color: var(--primary);
+  background: #9fffa6;
+  font-weight: bolder;
+  border-radius: 2px;
+  padding: 0 0.2rem;
+}
+
+.card .card-address {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.card .card-address .hexagon {
+  width: 0.9rem;
+  color: var(--primary);
+  margin-right: 0.2rem;
+}
+
+.card .card-rating {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.card .card-rating .star {
+  width: 0.9rem;
+  color: yellow;
+  margin-right: 0.2rem;
+}
+
+/* Product Details */
+.product-section .product-nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem 10rem;
+}
+
+.product-section .product-nav a,
+.product-section .product-nav .chevron-right {
+  font-size: 0.8rem;
+  margin-right: 0.5rem;
+  color: #00000080;
+}
+
+.product-section .product-nav .product-navbar-item {
+  color: var(--primary);
+}
+
+.product-section .product-nav .chevron-right {
+  width: 0.8rem;
+}
+
+.product-details {
+  color: #000000;
+  display: flex;
+  justify-content: center;
+}
+
+.product-details .product-details-1 .product-image img {
+  border-radius: 5px;
+}
+
+.product-details .product-details-1 .item-image {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.product-details .product-details-1 .item-image img {
+  border-radius: 5px;
+  margin-top: 0.5rem;
+  margin-right: 1rem;
+}
+
+.product-details .product-details-1 .item-image .item-1 img {
+  border: 3px solid var(--primary);
+}
+
+.product-details .product-details-1 .item-image .item-2 img:hover {
+  border: 3px solid var(--primary);
+}
+
+.product-details .product-details-2 {
+  padding: 0 3rem;
+}
+
+.product-details .product-details-2 .product-details-title {
+  width: 80vh;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.product-details .product-details-2 .product-details-tag {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.product-details .product-details-2 .product-details-tag span {
+  color: #00000080;
+}
+
+.product-details .product-details-2 .product-details-tag .terjual,
+.product-details .product-details-2 .product-details-tag .rating,
+.product-details .product-details-2 .product-details-tag .diskusi {
+  margin-right: 1rem;
+}
+
+.product-details .product-details-2 .product-details-tag .star {
+  width: 1rem;
+  color: goldenrod;
+}
+
+.product-details .product-details-2 .product-details-price {
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding: 1rem 0;
+}
+
+.product-details .product-details-2 .pilih-warna {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.product-details .product-details-2 .pilih-warna span {
+  color: #00000080;
+  font-weight: 500;
+}
+
+.product-details .product-details-2 .button-color .btn {
+  height: 2rem;
+  padding: 0 1rem;
+  border-radius: 10px;
+  color: #00000080;
+  margin-bottom: 1rem;
+}
+
+.product-details .product-details-2 .button-color .active,
+.btn:hover {
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+.product-details .product-details-2 .button-nav .btn-nav {
+  height: 2rem;
+  padding: 0 1rem;
+  background-color: #00000000;
+  color: #00000080;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.product-details .product-details-2 .button-nav .active,
+.btn-nav:hover {
+  color: var(--primary);
+  border-bottom: 3px solid var(--primary);
+}
+
+.product-details .product-details-2 .kondisi,
+.product-details .product-details-2 .berat,
+.product-details .product-details-2 .kategori,
+.product-details .product-details-2 .etalase {
+  color: #00000080;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+
+.product-details .product-details-2 .kondisi span,
+.product-details .product-details-2 .berat span {
+  color: #000000;
+}
+
+.product-details .product-details-2 .kategori span,
+.product-details .product-details-2 .etalase span {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.product-details .product-details-2 .deskripsi {
+  margin-top: 1rem;
+}
+
+.product-details .product-details-2 .lihat-selengkapnya {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.product-details .product-details-3 {
+  height: fit-content;
+  border: 2px solid var(--bg4);
+  border-radius: 7px;
+  padding: 0.5rem;
+}
+
+.product-details .product-details-3 .atur {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.product-details .product-details-3 .color {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.product-details .product-details-3 .stok {
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+.product-details .product-details-3 .stok-tambah {
+  display: flex;
+  border: 1px solid var(--bg5);
+  border-radius: 5px;
+  padding: 0 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.product-details .product-details-3 .stok-tambah .plus {
+  width: 0.7rem;
+  margin-left: 0.5rem;
+}
+.product-details .product-details-3 .stok-tambah .minus {
+  width: 0.7rem;
+  margin-right: 0.5rem;
+}
+
+.product-details .product-details-3 .catatan {
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.product-details .product-details-3 .catatan a {
+  display: flex;
+  align-items: center;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.product-details .product-details-3 .catatan .edit-2 {
+  width: 0.8rem;
+  color: var(--primary);
+  margin-right: 0.3rem;
+}
+
+.product-details .product-details-3 .total {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.product-details .product-details-3 .total .subtotal {
+  color: #00000080;
+}
+
+.product-details .product-details-3 .total .price {
+  font-weight: bolder;
+}
+
+.product-details .product-details-3 .button-checkout {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.product-details .product-details-3 .button-checkout .btn-keranjang {
+  padding: 0.5rem 0;
+  background-color: var(--primary);
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+}
+
+.product-details .product-details-3 .button-checkout .btn-beli {
+  padding: 0.5rem 0;
+  color: var(--primary);
+  font-weight: bold;
+  border: 2px solid var(--primary);
+  border-radius: 5px;
+}
+
+.product-details .product-details-3 .button-menu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-details .product-details-3 .button-menu a {
+  color: #000000;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+}
+
+.product-details .product-details-3 .button-menu .menu-icon {
+  width: 0.8rem;
+  margin-right: 0.3rem;
+}
