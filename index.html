@@ -47,8 +47,18 @@
         </div>
 
         <div class="navbar-button">
-          <button class="button-1">Masuk</button>
-          <button class="button-2">Daftar</button>
+          <button class="button-1" type="submit" onclick="openPopup()">
+            Masuk
+          </button>
+          <button class="button-2" type="submit" onclick="openPopup()">
+            Daftar
+          </button>
+          <div class="popup" id="popup">
+            <h2>Segera Hadir</h2>
+            <button class="button-2" type="button" onclick="closePopup()">
+              OK
+            </button>
+          </div>
         </div>
       </div>
 
@@ -282,5 +292,8 @@
     <script>
       feather.replace();
     </script>
+
+    <!-- Javascript -->
+    <script src="script.js"></script>
   </body>
 </html>

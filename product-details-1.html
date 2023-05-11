@@ -47,8 +47,18 @@
         </div>
 
         <div class="navbar-button">
-          <button class="button-1">Masuk</button>
-          <button class="button-2">Daftar</button>
+          <button class="button-1" type="submit" onclick="openPopup()">
+            Masuk
+          </button>
+          <button class="button-2" type="submit" onclick="openPopup()">
+            Daftar
+          </button>
+          <div class="popup" id="popup">
+            <h2>Segera Hadir</h2>
+            <button class="button-2" type="button" onclick="closePopup()">
+              OK
+            </button>
+          </div>
         </div>
       </div>
 
@@ -136,7 +146,7 @@
           </div>
           <p class="product-details-price">Rp75.000</p>
           <p class="pilih-warna">Pilih warna: <span>Putih</span></p>
-          <div class="button-color">
+          <div class="button-color" id="button-color">
             <button class="btn active">Putih</button>
             <button class="btn">Hitam</button>
             <button class="btn">Abu-abu</button>
@@ -166,7 +176,7 @@
           <div class="stok">
             <div class="stok-tambah">
               <i class="minus" data-feather="minus"></i>
-              <p>1</p>
+              <p id="number">1</p>
               <i class="plus" data-feather="plus"></i>
             </div>
             <p>Stok:<span>900</span></p>
@@ -203,5 +213,8 @@
     <script>
       feather.replace();
     </script>
+
+    <!-- Javascript -->
+    <script src="script.js"></script>
   </body>
 </html>
