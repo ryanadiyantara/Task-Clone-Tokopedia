@@ -1,2 +1,2 @@
 # Task-Clone-Tokopedia
-![TaskCloneTokopedia](https://user-images.githubusercontent.com/93558892/237029986-4602651b-be77-4742-a9be-7d48e53fb9e9.gif)
+![task clone tokopedia](https://github.com/ryanadiyantara/Task-Clone-Tokopedia/assets/93558892/8686cf21-ffd3-4a23-a715-42daafa5456b)
